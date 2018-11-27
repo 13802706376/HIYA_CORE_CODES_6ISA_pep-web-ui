@@ -1,0 +1,131 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'PingFangSC-Regular', 'PingFang SC';
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+#app{
+  .sidebar-container{
+    width: 220px !important;
+  }
+  .main-container{
+    background: #f2f2f2;
+    margin-left: 220px;
+  }
+}
+
+.app-main{
+  min-height: 100%;
+  padding: 20px;
+}
+
+.app-container {
+  padding: 20px;
+  background: #fff;
+  min-height: calc(100vh - 94px);
+  .header-font-style{
+    color:#5b5b5b;
+  }
+}
+
+.el-form.el-form--inline{
+  background: #f4f4f4;
+  padding:20px 0 0 20px;
+}
+
+.link-type, .link-type:focus{
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.filter-btn-depart{
+  margin-left: 60px;
+}
+
+.el-tree-node.is-current > .el-tree-node__content {
+  background: #c9c9c9;
+}
+
+.el-tree-node__content > .el-tree-node__expand-icon{
+  font-size: 20px;
+  color: #8a8a8a;
+}
+
+.el-tree-node__content>.el-tree-node__expand-icon.is-leaf{
+  color: transparent;
+  cursor: default;
+}
+
+.margin-top-15{
+  margin-top:15px;
+}
